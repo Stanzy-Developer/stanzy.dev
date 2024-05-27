@@ -6,8 +6,17 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stanley's Portfolio",
-  description: "The Modern FrontEnd Developer",
+  title: "Portfolio - Richil Stanley",
+  description:
+    "In this portfolio, discover the different projects of Stanley a web developer based in Cameroun. Contact him to discuss about your next project.",
+  keywords:
+    "Web development, frontend developer, Next.js developer, portfolio, Stanley, Richil, Nouping, web, internet, Cameroon, Douala",
+  icons: {
+    icon: "/profile.jpg",
+  },
+  openGraph: {
+    images: "/profile.jpg",
+  },
 };
 
 export default function RootLayout({
