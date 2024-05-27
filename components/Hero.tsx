@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 my-20 flex justify-center">
-        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vh]">
+        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[90vh]">
           <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
             {" "}
             Dynamic Web Magic with Next.js

@@ -11,18 +11,22 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="mt-3 flex flex-wrap items-center justify-center p-4 sm:mt-10 sm:gap-x-60 sm:gap-y-8">
+      <div className="mt-3 flex flex-wrap items-center justify-center p-4 sm:mt-10 sm:gap-x-32 sm:gap-y-8">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             className="flex h-[28rem] w-[80vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
             key={id}
           >
             <PinContainer containerClassName="" title={link} href={link}>
-              <div className="relative mb-10 flex h-[20vh] w-[35vh] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[670px] lg:h-[30vh]">
+              <div className="relative mb-10 flex h-[20vh] w-[35vh] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[470px] lg:h-[30vh]">
                 <div className="relative size-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <img src="/bg.png" alt="bg-png" />
+                  <img
+                    src={img}
+                    alt={title}
+                    className="absolute bottom-0 z-10 size-full"
+                  />
                 </div>
-                <img src={img} alt={title} className="absolute bottom-0 z-10" />
               </div>
               <h1 className="line-clamp-1 text-base font-bold md:text-xl lg:text-2xl">
                 {title}
