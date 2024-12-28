@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "../styles/globals.css";
 import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/profile.jpg",
   },
-  metadataBase: new URL('https://your-domain.com'),
+  metadataBase: new URL("https://your-domain.com"),
 };
 
 export default function RootLayout({

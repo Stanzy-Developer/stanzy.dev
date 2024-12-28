@@ -95,7 +95,7 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/sanity.svg"],
     link: "/ui.pitch.com",
-    liveLink: "yc-directory-snowy.vercel.app",
+    liveLink: "https://yc-directory-snowy.vercel.app",
   },
   {
     id: 4,
