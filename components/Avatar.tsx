@@ -1,9 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Avatar = () => {
+  useEffect(() => {
+    // Browser-specific code here
+  }, []);
+
   return (
     <div className="absolute left-1/2 top-10 z-[5000] -translate-x-1/2 items-center justify-center">
       <div className="relative">

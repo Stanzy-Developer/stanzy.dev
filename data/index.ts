@@ -187,14 +187,14 @@ export const workExperience = [
     id: 2,
     title: "Frontend Engineer - Briluce Web Service LTD (Remote - UEA DUBAI)",
     desc: "Collaborated with a team backends developers and designers to develop beautiful, functional, responsive, fast and interactive web solutions.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance Web Developer - BENCHMARK SOLUTIONS (Remote - USA)",
     desc: "Led the dev of an agency website and others web solutions for a client, from initial concept to deployment.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {

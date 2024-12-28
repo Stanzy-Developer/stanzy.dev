@@ -1,10 +1,15 @@
+"use client";
 import { projects } from "@/data";
-import React from "react";
+import React, { useEffect } from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Link from "next/link";
 
 const RecentProjects = () => {
+  useEffect(() => {
+    // Browser-specific code here
+  }, []);
+
   return (
     <div className="py-28" id="projects">
       <h1 className="heading">
