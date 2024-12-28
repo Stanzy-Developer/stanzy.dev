@@ -8,8 +8,6 @@ import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import { navItems } from "@/data";
-import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Home() {
   return (

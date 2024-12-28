@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/profile.jpg",
   },
+  metadataBase: new URL('https://your-domain.com'),
 };
 
 export default function RootLayout({

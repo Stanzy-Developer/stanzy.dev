@@ -1,8 +1,8 @@
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
-import { title } from "process";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -12,12 +12,12 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="mt-3 flex flex-wrap items-center justify-center p-4 sm:mt-10 sm:gap-x-32 sm:gap-y-8">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, liveLink }) => (
           <div
             className="flex h-[28rem] w-[80vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
             key={id}
           >
-            <PinContainer containerClassName="" title={link} href={link}>
+            <PinContainer containerClassName="" title={link} href={liveLink}>
               <div className="relative mb-10 flex h-[20vh] w-[35vh] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[470px] lg:h-[30vh]">
                 <div className="relative size-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <img src="/bg.png" alt="bg-png" />
@@ -47,12 +47,16 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-center">
+                <Link
+                  href={liveLink}
+                  target="_blank"
+                  className="flex items-center justify-center"
+                >
                   <p className="flex text-sm text-purple md:text-xs lg:text-xl">
-                    Check Live Side
+                    Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#C0ACF9" />
-                </div>
+                </Link>
               </div>
             </PinContainer>
           </div>

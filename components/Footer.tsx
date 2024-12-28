@@ -44,7 +44,9 @@ const Footer = () => {
               className="flex size-10 cursor-pointer items-center justify-center rounded-lg border border-black-300 bg-black-200/75 backdrop-blur-lg"
               key={profile.id}
             >
-              <img src={profile.img} width={20} height={20} />
+              <a href={profile.link} target="_blank">
+                <img src={profile.img} width={20} height={20} />
+              </a>
             </div>
           ))}
         </div>

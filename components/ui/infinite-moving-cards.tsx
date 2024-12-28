@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    icon?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -87,7 +88,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[90vw] max-w-full shrink-0 rounded-2xl border border-b-0 border-slate-800 p-5 md:w-[60vw] md:p-16"
+            className="relative w-[90vw] max-w-full shrink-0 rounded-2xl border border-b-0 border-slate-800 p-5 md:w-[60vw] md:p-12"
             style={{
               background: "rgb(4,7,29)",
               backgroundColor:
@@ -98,16 +99,13 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 size-[calc(100%_+_4px)]"
+                className="pointer-events-none absolute -left-0.5 -top-0.5 -z-10 size-[calc(100%_+_4px)]"
               ></div>
               <span className=" relative z-20 text-sm font-normal leading-[1.6] text-white md:text-lg">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <div className="me-3">
-                    <img src="profile.svg" alt="profile" />
-                  </div>
                   <div className="flex flex-col gap-1">
                     <span className=" text-xl font-bold leading-[1.6] text-white">
                       {item.name}

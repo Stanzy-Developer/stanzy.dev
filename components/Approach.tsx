@@ -94,7 +94,7 @@ const Card = ({
       </AnimatePresence>
 
       <div className="relative z-20 flex flex-col items-center justify-center">
-        <div className="absolute left-[50%] top-[50%] mx-auto flex w-full translate-x-[-50%] translate-y-[-50%] items-center justify-center text-center  transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
+        <div className="absolute left-1/2 top-1/2 mx-auto flex w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center text-center  transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
           {icon}
         </div>
         <button className="relative inline-flex overflow-hidden rounded-xl p-px opacity-0 transition duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2  focus:ring-offset-slate-50 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100">

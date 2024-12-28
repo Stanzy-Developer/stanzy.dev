@@ -72,11 +72,12 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Healthcare System",
+    des: "A digital healthcare system that allows patients to book appointments, view their medical records, and communicate with their doctors.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/appwrite.svg", "/twilio.svg"],
+    link: "/ui.careplus.com",
+    liveLink: "https://careplus-indol.vercel.app/",
   },
   {
     id: 2,
@@ -85,55 +86,59 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
+    liveLink: "https://yoom-gray-sigma.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Pitch Your Startup and Connect with Entrepreneurs",
+    des: "A Platform where creators can Pitch, Vote and Grow their startup and connect with other entrepreneurs to get their feedback and support.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/sanity.svg"],
+    link: "/ui.pitch.com",
+    liveLink: "yc-directory-snowy.vercel.app",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "A Prompt Sharing Platform",
+    des: "A platform where users can create, share and copy their prompts and get feedback from other users.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: ["/next.svg", "/tail.svg", "/mongoDB.svg"],
+    link: "/promptopia.ui",
+    liveLink: "https://share-prompt-flax.vercel.app/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Stanley was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Stanley's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Stanley is the ideal partner.",
+    name: "ERIC IDRISS RADJI",
+    title: "Founder and CEO of BENCHMARK SOLUTIONS",
+    icon: "/eric.svg"
+  },
+ {
+    quote:
+      "Collaborating on projects with Stanley is easy and fun. He is a great team player and always delivers on time. I highly recommend him for any project. He has a great communication skills and always ask for feedback to improve the project.",
+    name: "MOUSSA",
+    title: "Backend Developer at Primus Cloud Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Stanley is a great Team leader and a great developer. He is always ready to help and deliver on time. I highly recommend him for any project. He leaded the team of Frontend developers to develop a seamless and beautiful web platform which was a great success.",
+    name: "KINASON",
+    title: "Backend Developer and VP at Primus Cloud Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I Love working with Stanley, he is a great developer and a great team leader. He is always ready to help and advocate when working with him, you feel like you are working with a friend the working and learning environment is great. I highly recommend him for any project.",
+    name: "CHRISTABELLE",
+    title: "Frontend Developer at Primus Cloud Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I gave a project to Stanley and he delivered it on time and with great quality. I highly recommend him for any project. He reproduced the design of my website and made it look beautiful and functional. I highly recommend him for any project.",
+    name: "Mr Brian",
+    title: "CEO and designer at Briluce Web Service LTD",
   },
 ];
 
@@ -173,29 +178,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
+    title: "Frontend Engineer Intern - ClingsTech Inc",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Frontend Engineer - Briluce Web Service LTD (Remote - UEA DUBAI)",
+    desc: "Collaborated with a team backends developers and designers to develop beautiful, functional, responsive, fast and interactive web solutions.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Web Developer - BENCHMARK SOLUTIONS (Remote - USA)",
+    desc: "Led the dev of an agency website and others web solutions for a client, from initial concept to deployment.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Lead Frontend Developer - Primus Cloud Solutions (On Site - Douala, Cameroon)",
+    desc: "Lead a group of 3 Frontend developers to develop a web solution to help influencer to easy sponsor their content using a simple and easy to use web platform.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,14 +210,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Stanzy-Developer",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/NoupingStanley",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/stanzy-dev-887683253/",
   },
 ];
 
