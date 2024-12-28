@@ -1,3 +1,4 @@
+"use client";
 import Approach from "@/components/Approach";
 import Avatar from "@/components/Avatar";
 import { Clients } from "@/components/Clients";
